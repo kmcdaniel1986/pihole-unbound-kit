@@ -1,0 +1,3 @@
+# prove recursion, not forwarding
+sudo tcpdump -n -i any '(udp or tcp) and port 53'
+# You should see queries to many authoritative servers, not to 8.8.8.8 or 1.1.1.1
